@@ -31,7 +31,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (handleValidation()) {
-      const { password, username } = values;
+      const { username, password } = values;
       try {
         const { data } = await axios.post(loginRoute, {
           username,
